@@ -25,7 +25,7 @@
             <h3 class="text-center mb-4">Application For Employment</h3><br />
             <div class="row">
                 <div class="col-sm-12">
-                    <form action="" method="POST">
+                    <an="" method="POST">
                         <div class="form-row mb-3">
                             <div class="form-group col-md-3">
                                 <label for="date">Application Date</label>
@@ -263,7 +263,7 @@
                             and used only in an emergency.</small>
 
                         <br />
-                        <h4 class="font-weight-bold text-info mb-4 mt-4">Criminal Backgroung</h4>
+                        <h4 class="font-weight-bold text-info mb-4 mt-4">Criminal Background</h4>
                         <div class="form-group col-md-4">
                             <label class="mb-3">Have you ever been convicted of a crime?</label><br />
                             <div class="custom-control custom-radio custom-control-inline">
@@ -278,39 +278,103 @@
                         </div>
 
                         <br />
-                        <h4 class="font-weight-bold text-info mb-4 mt-4">Next Section</h4>
-                        <!-- Justin's Reference Section -->
-
-                        <br />
-                        <h4 class="font-weight-bold text-info mb-4 mt-4">Next Section</h4>
-                        <!-- Camille's Education Section -->
-
-                        <br />
-                        <h4 class="font-weight-bold text-info mb-4 mt-4">Next Section</h4>
-                        <!-- Merv's Work Experience Section -->
-
-
-                        <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                                <label class="form-check-label" for="gridCheck">By checking this box, I agree to be
-                                    tested for illegal drugs.</label>
+                        <h4 class="font-weight-bold text-info mb-4 mt-4">References</h4>
+                        <p>Please provide two references other than relatives or previous employers.</p>
+                        <div class="container">
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="first">Name</label>
+                                    <input type="text" class="form-control" id="referenceName" placeholder="">
+                                    <label for="middle">Title</label>
+                                    <input type="text" class="form-control" id="referenceTitle" placeholder="">
+                                    <label for="last">Company</label>
+                                    <input type="text" class="form-control" id="referenceCompany" placeholder="">
+                                    <label for="first">Address</label>
+                                    <input type="text" class="form-control" id="referenceAddress" placeholder="">
+                                    <label for="middle">Telephone</label>
+                                    <input type="text" class="form-control" id="referenceTelephone"
+                                        placeholder="(000)-000-0000">
+                                    <label for="last">Email Address</label>
+                                    <input type="text" class="form-control" id="referenceEmail" placeholder="">
+                                </div>
+                                <div class="form-group col-md-4 offset-md-4">
+                                    <label for="first">Name</label>
+                                    <input type="text" class="form-control" id="referenceName" placeholder="">
+                                    <label for="middle">Title</label>
+                                    <input type="text" class="form-control" id="referenceTitle" placeholder="">
+                                    <label for="last">Company</label>
+                                    <input type="text" class="form-control" id="referenceCompany" placeholder="">
+                                    <label for="first">Address</label>
+                                    <input type="text" class="form-control" id="referenceAddress" placeholder="">
+                                    <label for="middle">Telephone</label>
+                                    <input type="text" class="form-control" id="referenceTelephone"
+                                        placeholder="(000)-000-0000">
+                                    <label for="last">Email Address</label>
+                                    <input type="text" class="form-control" id="referenceEmail" placeholder="">
+                                </div>
                             </div>
                         </div>
-                        <div class="text-center mb-3">
-                            <button type="submit" class="btn btn-primary mt-4">Submit Application</button>
+                        <h4 class="font-weight-bold text-info mb-4 mt-4">Miscellaneous</h4>
+                        <br />
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label class="mb-3">Do you have a drivers license?</label><br />
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="yesLicense" name="driversRadio"
+                                            class="custom-control-input" value="Driver">
+                                        <label class="custom-control-label" for="yesLicense">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="noLicense" name="driversRadio"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="noLicense">No</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 offset-md-4">
+                                    <label class="mb-3">Have you ever served in the military?</label><br />
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="yesMilitary" name=militaryRadio
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="yesMilitary">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="noMilitary" name="militaryRadio"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="noMilitary">No</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                 </div>
-                </form>
-            </div><br /><br />
-
-            <div>
-                <p>Check Git Setup for branch</p>
             </div>
-            <footer></footer>
+
+            <br />
+            <h4 class="font-weight-bold text-info mb-4 mt-4">Next Section</h4>
+            <!-- Camille's Education Section -->
+
+            <br />
+            <h4 class="font-weight-bold text-info mb-4 mt-4">Next Section</h4>
+            <!-- Merv's Work Experience Section -->
+
+
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                    <label class="form-check-label" for="gridCheck">By checking this box, I agree to be
+                        tested for illegal drugs.</label>
+                </div>
+            </div>
+            <div class="text-center mb-3">
+                <button type="submit" class="btn btn-primary mt-4">Submit Application</button>
+            </div>
+        </div>
+        </form>
+        </div><br /><br />
+        <footer></footer>
     </main>
 
-    <script src="scripts.js"></script>
+    <script src="scripts.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
