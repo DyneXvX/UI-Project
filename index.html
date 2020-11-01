@@ -286,91 +286,160 @@
                         <div class="container">
                             <div class="form-row">
                                 <div class="form-group col-md-4">
-                                    <label for="first">Name</label>
+                                    <!--References #1-->
+                                    <label for="referenceName01">Name</label>
                                     <input type="text" class="form-control" id="referenceName" placeholder="">
-                                    <label for="middle">Title</label>
+                                    <label for="referenceTitle01">Title</label>
                                     <input type="text" class="form-control" id="referenceTitle" placeholder="">
-                                    <label for="last">Company</label>
+                                    <label for="referenceCompany01">Company</label>
                                     <input type="text" class="form-control" id="referenceCompany" placeholder="">
-                                    <label for="first">Address</label>
+                                    <label for="referenceAddress01">Address</label>
                                     <input type="text" class="form-control" id="referenceAddress" placeholder="">
-                                    <label for="middle">Telephone</label>
+                                    <label for="referenceTelephone01">Telephone</label>
                                     <input type="text" class="form-control" id="referenceTelephone"
                                         placeholder="(000)-000-0000">
-                                    <label for="last">Email Address</label>
+                                    <label for="referenceEmail01">Email Address</label>
                                     <input type="text" class="form-control" id="referenceEmail" placeholder="">
                                 </div>
                                 <div class="form-group col-md-4 offset-md-4">
-                                    <label for="first">Name</label>
+                                    <!--References #2-->
+                                    <label for="referenceName02">Name</label>
                                     <input type="text" class="form-control" id="referenceName" placeholder="">
-                                    <label for="middle">Title</label>
+                                    <label for="referenceTitle02">Title</label>
                                     <input type="text" class="form-control" id="referenceTitle" placeholder="">
-                                    <label for="last">Company</label>
+                                    <label for="referenceCompany02">Company</label>
                                     <input type="text" class="form-control" id="referenceCompany" placeholder="">
-                                    <label for="first">Address</label>
+                                    <label for="referenceAddress02">Address</label>
                                     <input type="text" class="form-control" id="referenceAddress" placeholder="">
-                                    <label for="middle">Telephone</label>
+                                    <label for="referenceTelephone02">Telephone</label>
                                     <input type="text" class="form-control" id="referenceTelephone"
                                         placeholder="(000)-000-0000">
-                                    <label for="last">Email Address</label>
+                                    <label for="referenceEmail02">Email Address</label>
                                     <input type="text" class="form-control" id="referenceEmail" placeholder="">
                                 </div>
                             </div>
                         </div>
                         <h4 class="font-weight-bold text-info mb-4 mt-4">Miscellaneous</h4>
                         <br />
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label class="mb-3">Do you have a drivers license?</label><br />
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="yesLicense" name="driversRadio"
-                                            class="custom-control-input" value="Driver">
-                                        <label class="custom-control-label" for="yesLicense">Yes</label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="noLicense" name="driversRadio"
-                                            class="custom-control-input">
-                                        <label class="custom-control-label" for="noLicense">No</label>
-                                    </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="mb-3">Do you have a drivers license?</label><br />
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="yesLicense" name="driversRadio" class="custom-control-input"
+                                        value="Driver">
+                                    <label class="custom-control-label" for="yesLicense">Yes</label>
                                 </div>
-                                <div class="col-md-4 offset-md-4">
-                                    <label class="mb-3">Have you ever served in the military?</label><br />
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="yesMilitary" name=militaryRadio
-                                            class="custom-control-input">
-                                        <label class="custom-control-label" for="yesMilitary">Yes</label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="noMilitary" name="militaryRadio"
-                                            class="custom-control-input">
-                                        <label class="custom-control-label" for="noMilitary">No</label>
-                                    </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="noLicense" name="driversRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="noLicense">No</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 offset-md-4">
+                                <label class="mb-3">Have you ever served in the military?</label><br />
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="yesMilitary" name=militaryRadio
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="yesMilitary">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="noMilitary" name="militaryRadio"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="noMilitary">No</label>
                                 </div>
                             </div>
                         </div>
+                        <br />
+                        <div class="row">
+                            <div class="form-group col-md-4">
+                                <label for="licenseNumber">Drivers License #</label>
+                                <input type="text" class="form-control" id="driverLicense">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-2">
+                                <label for="licenseState">State of Issue</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Select a State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="expiresOn">Expires On</label>
+                                <input type="date" class="form-control" id="expiresOn" placeholder="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+        
+
+        <br />
+        <h4 class="font-weight-bold text-info mb-4 mt-4">Next Section</h4>
+        <!-- Camille's Education Section -->
+
+        <br />
+        <h4 class="font-weight-bold text-info mb-4 mt-4">Next Section</h4>
+        <!-- Merv's Work Experience Section -->
+
+
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                <label class="form-check-label" for="gridCheck">By checking this box, I agree to be
+                    tested for illegal drugs.</label>
             </div>
-
-            <br />
-            <h4 class="font-weight-bold text-info mb-4 mt-4">Next Section</h4>
-            <!-- Camille's Education Section -->
-
-            <br />
-            <h4 class="font-weight-bold text-info mb-4 mt-4">Next Section</h4>
-            <!-- Merv's Work Experience Section -->
-
-
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                    <label class="form-check-label" for="gridCheck">By checking this box, I agree to be
-                        tested for illegal drugs.</label>
-                </div>
-            </div>
-            <div class="text-center mb-3">
-                <button type="submit" class="btn btn-primary mt-4">Submit Application</button>
-            </div>
+        </div>
+        <div class="text-center mb-3">
+            <button type="submit" class="btn btn-primary mt-4">Submit Application</button>
+        </div>
         </div>
         </form>
         </div><br /><br />
