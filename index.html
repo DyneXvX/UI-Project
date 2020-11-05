@@ -308,7 +308,6 @@
                                         placeholder="">
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
-
                                             <label for="referenceState01">State</label>
                                             <select id="inputState" class="form-control">
                                                 <option selected>Select a State</option>
@@ -368,7 +367,7 @@
                                         <div class="from-group col-md-6">
                                             <label for="referenceZip01">Zip</label>
                                             <input type="text" maxlength="9" class="form-control" id="referenceZip01"
-                                                placeholder="">
+                                                pattern="[0-9]" placeholder="">
                                         </div>
                                     </div>
                                     <label for="referenceTelephone01">Telephone</label>
@@ -383,7 +382,7 @@
                                     <h5><u>Reference #2</u></h5>
                                     <label for="referenceName02">Name</label>
                                     <input type="text" maxlength="50" class="form-control" id="referenceName02"
-                                        placeholder="">
+                                        pattern="[A-Za-z]*" placeholder="">
                                     <label for="referenceTitle02">Title</label>
                                     <input type="text" maxlength="100" class="form-control" id="referenceTitle02"
                                         placeholder="">
@@ -457,7 +456,7 @@
                                         <div class="from-group col-md-6">
                                             <label for="referenceZip02">Zip</label>
                                             <input type="text" maxlength="9" class="form-control" id="referenceZip02"
-                                                placeholder="">
+                                                pattern="[0-9]" placeholder="">
                                         </div>
                                     </div>
                                     <label for="referenceTelephone02">Telephone</label>
@@ -502,7 +501,7 @@
                         <div class="row">
                             <div class="form-group col-md-4">
                                 <label for="licenseNumber">Drivers License #</label>
-                                <input type="text" class="form-control" id="driverLicense">
+                                <input type="text" class="form-control" maxlength="25" id="driverLicense">
                             </div>
                         </div>
                         <div class="row">
