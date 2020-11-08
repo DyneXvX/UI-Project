@@ -20,4 +20,8 @@ function validateForm() {
         document.getElementById('ssn').scrollIntoView();
         return false;
     } 
+    else
+    {
+        alert("Your application has been successfully submitted");
+    }
   }
