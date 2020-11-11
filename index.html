@@ -271,7 +271,6 @@
                                     <input type="text" class="form-control" id="last" maxlength="35"
                                         placeholder="Contact Last Name" required>
                                 </div>
-                                <small id="passwordHelpBlock" class="form-text text-muted">Select All That Apply</small>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-4">
@@ -605,7 +604,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-6" style = "padding: 1.2%;">
                            <p> Please provide your highest level of education.</p>
-                            <label for="eduLevel">Education Level</label>
+                            <label for="eduLevel">Education Level *</label>
                             <select id="inputEdu" class="form-control" required>
                                 <option selected>Select Highest Level of Education</option>
                                 <option value="HS">High School</option>
@@ -614,9 +613,9 @@
                                 <option value="MS">Master's</option>
                                 <option value="PHD">Doctorate</option>
                             </select>
-                            <label for="major">Major</label>
+                            <label for="major">Major *</label>
                             <input type="text" class="form-control" maxlength="35" id="major" required>
-                            <label for="schoolName">School Name</label>
+                            <label for="schoolName">School Name *</label>
                             <input type="text" maxlength="50" class="form-control" id="schoolName"
                                 placeholder="" required>
                             <label for="schoolCity">City</label>
@@ -679,7 +678,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <label for="gradDate">Graduation Date</label>
+                            <label for="gradDate">Graduation Date *</label>
                             <input type="date" class="form-control" id="gradDate" placeholder="" required>
                         </div>
                         <div class="form-group col-md-6" style= "padding: 2%;">
@@ -697,8 +696,8 @@
                 <br/>
                 <br/>
                 <h4 class="font-weight-bold text-info mb-4 mt-4">Work Experience</h4>
-                <p>Please provide your most recent employment information.</p>
-                <h5><u>Employer #1</u></h5>
+                <p class="mb-4">Please provide your most recent employment information.</p>
+                <h5 class="mb-4"><u>Employer #1</u></h5>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 form-group">
@@ -818,8 +817,8 @@
                     </div>
                 </div>
                 <br/>
-                <h5><u>Employer #2</u></h5>
-                <div class="container">
+                <h5 class="mb-4"><u>Employer #2</u></h5>
+                <div class="container mb-5">
                     <div class="row">
                         <div class="col-md-3 form-group">
                             <label for="workExp2startDate">Start Date</label>
@@ -939,7 +938,7 @@
                 </div>
             <div class="form-group col-md-12">
                 <h4 class="font-weight-bold text-info mb-4 mt-4">APPLICATION ACKNOWLEDGEMENT AND WAIVER</h4>
-                <p>By submitting this application, I understand and agree that:<br><br>
+                <p class="p-2">By submitting this application, I understand and agree that:<br><br>
                     Applying for this job does not mean I will be hired. If a job is offered and accepted, UNFinished
                     Business can end my employment at any time.
                     I also have the right to quit the position at any time. Any changes in job duties must be signed off
@@ -958,11 +957,11 @@
                     run. I understand that during these 60 days, and
                     after, myself and UNFinished Business can end my employment at any time. </p>
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-6 mt-4">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">By checking this box, I agree to be
-                        tested for illegal drugs.</label>
+                        tested for illegal drugs. *</label>
                 </div>
             </div>
             </div>
