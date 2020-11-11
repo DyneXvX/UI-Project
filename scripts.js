@@ -26,20 +26,12 @@ function validateForm() {
     }
   }
 
-  //Prevents future dates from being chosen for past work experience 
-  var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1; //January is 0!
-var yyyy = today.getFullYear();
- if(dd<10){
-        dd='0'+dd
-    } 
-    if(mm<10){
-        mm='0'+mm
-    } 
+  //Makes all the month fields have a default date of today
+const monthControl = document.querySelectorAll('input[type="month"]');
+const date= new Date()
+const month=("0" + (date.getMonth() + 1)).slice(-2)
+const year=date.getFullYear()
 
-today = yyyy+'-'+mm+'-'+dd;
-document.getElementById("workExp1startDate").setAttribute("max", today);
-document.getElementById("workExp1endDate").setAttribute("max", today);
-document.getElementById("workExp2startDate").setAttribute("max", today);
-document.getElementById("workExp2endDate").setAttribute("max", today);
+monthControl.forEach((e) => {
+    e.value = `${year}-${month}`;
+});
