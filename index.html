@@ -693,7 +693,9 @@
                         </div>
                     </div>
                 </div>
-                <br />
+                
+                <br/>
+                <br/>
                 <h4 class="font-weight-bold text-info mb-4 mt-4">Work Experience</h4>
                 <p>Please provide your most recent employment information.</p>
                 <h5><u>Employer #1</u></h5>
@@ -709,24 +711,24 @@
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="workExp1companyName">Company Name</label>
-                            <input type="text" maxlength="100" id="workExp1companyName" class="form-control">
+                            <input type="text" maxlength="35" id="workExp1companyName" class="form-control">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label for="workExp1Address">Address</label>
-                            <input type="text" maxlength="100" id="workExp1Address" class="form-control">
+                            <input type="text" maxlength="35" id="workExp1Address" class="form-control">
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="workExp1Address2">Address 2</label>
-                            <input type="text" maxlength="100" id="workExp1Address2" class="form-control"
+                            <input type="text" maxlength="35" id="workExp1Address2" class="form-control"
                                 placeholder="Apartment, studio, or floor">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label for="workExp1City">City</label>
-                            <input type="text" maxlength="100" id="workExp1City" class="form-control">
+                            <input type="text" maxlength="35" id="workExp1City" class="form-control">
                         </div>
                         <div class="col-md-3 form-group">
                             <label for="workExp1State">State</label>
@@ -786,35 +788,36 @@
                         </div>
                         <div class="col-md-3 form-group">
                             <label for="workExp1Zip">Zip</label>
-                            <input type="number" id="workExp1Zip" class="form-control">
+                            <input type="text" id="workExp1Zip" class="form-control" pattern="[0-9]" maxlength="5">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 from-group">
                             <label for="workExp1Title">Title/Position</label>
-                            <input type="text" id="workExp1Title" maxlength="100" class="form-control">
+                            <input type="text" id="workExp1Title" maxlength="35" class="form-control">
                         </div>
                         <div class="col-md-4 from-group">
                             <label for="workExp1SupervisorName">Supervisor Name</label>
-                            <input type="text" id="workExp1SupervisorName" maxlength="100" class="form-control">
+                            <input type="text" id="workExp1SupervisorName" maxlength="35" class="form-control" pattern="[A-Za-z]*">
                         </div>
                         <div class="col-md-4 form-group">
                             <label for="workExp1Telephone">Supervisor Telephone</label>
                             <input type="tel" class="form-control" id="workExp1Telephone"
-                                pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})">
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label for="workExp1Duties">Duties</label>
-                            <textarea id="workExp1Duties" class="form-control" maxlength="300" style="resize: none;"></textarea>
+                            <textarea id="workExp1Duties" class="form-control" maxlength="300"></textarea>
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="workExp1LeaveReason">Reason for Leaving</label>
-                            <textarea id="workExp1LeaveReason" maxlength="300" class="form-control" style="resize: none;"></textarea>
+                            <textarea id="workExp1LeaveReason" maxlength="300" class="form-control"></textarea>
                         </div>
                     </div>
                 </div>
+                <br/>
                 <h5><u>Employer #2</u></h5>
                 <div class="container">
                     <div class="row">
@@ -828,24 +831,24 @@
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="workExp2companyName">Company Name</label>
-                            <input type="text" maxlength="100" id="workExp2companyName" class="form-control">
+                            <input type="text" maxlength="35" id="workExp2companyName" class="form-control">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label for="workExp2Address">Address</label>
-                            <input type="text" maxlength="100" id="workExp2Address" class="form-control">
+                            <input type="text" maxlength="35" id="workExp2Address" class="form-control">
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="workExp2Address2">Address 2</label>
-                            <input type="text" maxlength="100" id="workExp2Address2" class="form-control"
+                            <input type="text" maxlength="35" id="workExp2Address2" class="form-control"
                                 placeholder="Apartment, studio, or floor">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label for="workExp2City">City</label>
-                            <input type="text" maxlength="100" id="workExp2City" class="form-control">
+                            <input type="text" maxlength="35" id="workExp2City" class="form-control">
                         </div>
                         <div class="col-md-3 form-group">
                             <label for="workExp2State">State</label>
@@ -905,32 +908,32 @@
                         </div>
                         <div class="col-md-3 form-group">
                             <label for="workExp2Zip">Zip</label>
-                            <input type="number" id="workExp1Zip" class="form-control">
+                            <input type="number" id="workExp1Zip" class="form-control" pattern="[0-9]" maxlength="5">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 from-group">
                             <label for="workExp2Title">Title/Position</label>
-                            <input type="text" id="workExp2Title" maxlength="100" class="form-control">
+                            <input type="text" id="workExp2Title" maxlength="35" class="form-control">
                         </div>
                         <div class="col-md-4 from-group">
                             <label for="workExp2SupervisorName">Supervisor Name</label>
-                            <input type="text" id="workExp2SupervisorName" maxlength="100" class="form-control">
+                            <input type="text" id="workExp2SupervisorName" maxlength="35" class="form-control" pattern="[A-Za-z]*">
                         </div>
                         <div class="col-md-4 form-group">
                             <label for="workExp2Telephone">Supervisor Telephone</label>
                             <input type="tel" class="form-control" id="workExp2Telephone"
-                                pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})">
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label for="workExp2Duties">Duties</label>
-                            <textarea id="workExp2Duties" maxlength="300" class="form-control" style="resize: none;"></textarea>
+                            <textarea id="workExp2Duties" maxlength="300" class="form-control"></textarea>
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="workExp2LeaveReason">Reason for Leaving</label>
-                            <textarea id="workExp2LeaveReason" maxlength="300" class="form-control" style="resize: none;"></textarea>
+                            <textarea id="workExp2LeaveReason" maxlength="300" class="form-control"></textarea>
                         </div>
                     </div>
                 </div>
