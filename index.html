@@ -24,59 +24,331 @@
             <div class="container">
                 <h2 class="text-center mb-3">UNFinished Business</h2>
                 <h3 class="text-center mb-4">Application For Employment</h3><br />
-
                 <div class="row">
                     <div class="col-sm-12">
-                        <an="" method="POST">
-                            <div class="form-row mb-3">
-                                <div class="form-group col-md-3">
-                                    <label for="date">Application Date</label>
-                                    <input type="date" class="form-control" id="datePicker" disabled>
+                        <div class="form-row mb-3">
+                            <div class="form-group col-md-3">
+                                <label for="date">Application Date</label>
+                                <input type="date" class="form-control" id="datePicker" disabled>
+                            </div>
+                        </div>
+                        <h4 class="font-weight-bold text-info mb-4">Applicant Information</h4>
+                        <div class="form-row mb-3 ml-2">
+                            <h6 class="font-weight-bold"> * required fields</h6>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="first">First Name *</label>
+                                <input type="text" class="form-control" id="first" maxlength="35"
+                                    placeholder="First Name" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="middle">Middle Name</label>
+                                <input type="text" class="form-control" id="middle" maxlength="35"
+                                    placeholder="Middle Name">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="last">Last Name *</label>
+                                <input type="text" class="form-control" id="last" maxlength="35" placeholder="Last Name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputAddress">Address *</label>
+                                <input type="text" class="form-control" id="inputAddress" maxlength="70"
+                                    placeholder="1234 Main St" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputAddress2">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2" maxlength="70"
+                                    placeholder="Apartment, studio, or floor">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City *</label>
+                                <input type="text" class="form-control" id="inputCity" maxlength="35" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State *</label>
+                                <select id="inputState" class="form-control" required>
+                                    <option value="">Select a State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip *</label>
+                                <input type="text" class="form-control" id="inputZip" maxlength="9" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="phone">Telephone</label>
+                                <input type="tel" class="form-control" maxlength="15" class="form-control" id="phone"
+                                    pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})"
+                                    placeholder="000-000-0000">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="cell">Cell Phone *</label>
+                                <input type="tel" class="form-control" maxlength="15" class="form-control" id="cell"
+                                    pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})"
+                                    placeholder="000-000-0000" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="email">Email Address *</label>
+                                <input type="email" maxlength="254" class="form-control" id="email"
+                                    placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label id="ssn">SSN#</label>
+                                <div class="form-row">
+                                    <input type="text" class="form-control col-md-2" name="ssn-1" maxlength="3"
+                                        required> -
+                                    <input type="text" class="form-control col-md-2" name="ssn-2" maxlength="2"
+                                        required>-
+                                    <input type="text" class="form-control col-md-2" name="ssn-3" maxlength="4"
+                                        required>
+                                </div>
+                                <p class="text-danger mt-2" id="validate"></p>
+                            </div>
+                        </div>
+                        <div class="form-row mb-3">
+                            <div class="form-group col-md-4">
+                                <label for="position">Position Applied for *</label>
+                                <input type="text" class="form-control" id="position" maxlength="100" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputAddress2">Desired Salary</label>
+                                <input type="number" class="form-control" id="inputAddress2" placeholder="$">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="date">Date Available for Work *</label>
+                                <input type="date" class="form-control" id="dateAvailable" min="" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="position">Days available to work:</label>
+                                <div class="weekDays-selector">
+                                    <input type="checkbox" id="weekday-mon" class="weekday" />
+                                    <label for="weekday-mon">Mon</label>
+                                    <input type="checkbox" id="weekday-tue" class="weekday" />
+                                    <label for="weekday-tue">Tue</label>
+                                    <input type="checkbox" id="weekday-wed" class="weekday" />
+                                    <label for="weekday-wed">Wed</label>
+                                    <input type="checkbox" id="weekday-thu" class="weekday" />
+                                    <label for="weekday-thu">Thu</label>
+                                    <input type="checkbox" id="weekday-fri" class="weekday" />
+                                    <label for="weekday-fri">Fri</label>
+                                    <input type="checkbox" id="weekday-sat" class="weekday" />
+                                    <label for="weekday-sat">Sat</label>
+                                    <input type="checkbox" id="weekday-sun" class="weekday" />
+                                    <label for="weekday-sun">Sun</label>
                                 </div>
                             </div>
-                            <h4 class="font-weight-bold text-info mb-4">Applicant Information</h4>
-                            <div class="form-row mb-3 ml-2">
-                                <h6 class="font-weight-bold"> * required fields</h6>
+                            <div class="form-group col-md-4">
+                                <label class="mb-3" for="last">Employment Desired</label><br />
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Full-Time</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Part-Time</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Seasonal</label>
+                                </div>
+                                <small id="passwordHelpBlock" class="form-text text-muted">Select All That
+                                    Apply</small>
                             </div>
+                            <div class="form-group col-md-4">
+                                <label class="mb-3">Are you at least 18? *</label><br />
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                        class="custom-control-input" required>
+                                    <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline2">No</label>
+                                </div>
+                                <small id="passwordHelpBlock" class="form-text text-muted">
+                                    All employees must be 18 or over.</small>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="hours">How many hours can you work weekly?</label>
+                                <input type="number" max="50" class="form-control" id="hours">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="mb-3">Can you work nights? *</label><br />
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="nights1" name="nights" class="custom-control-input">
+                                    <label class="custom-control-label" for="nights1">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="nights2" name="nights" class="custom-control-input">
+                                    <label class="custom-control-label" for="nights2">No</label>
+                                </div>
+                            </div>
+                        </div>
 
-                            <div class="form-row">
-                                <div class="form-group col-md-4">
-                                    <label for="first">First Name *</label>
-                                    <input type="text" class="form-control" id="first" maxlength="35"
-                                        placeholder="First Name" required>
+                        <br />
+                        <h4 class="font-weight-bold text-info mb-4 mt-4">Emergency Contact</h4>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="first">First Name *</label>
+                                <input type="text" class="form-control" id="first" maxlength="35"
+                                    placeholder="Contact First Name" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="middle">Middle Name</label>
+                                <input type="text" class="form-control" id="middle" maxlength="35"
+                                    placeholder="Contact Middle Name">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="last">Last Name *</label>
+                                <input type="text" class="form-control" id="last" maxlength="35"
+                                    placeholder="Contact Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="phone">Telephone</label>
+                                <input type="tel" class="form-control" maxlength="15" class="form-control" id="phone"
+                                    pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})"
+                                    placeholder="000-000-0000">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="cell">Cell Phone *</label>
+                                <input type="tel" class="form-control" maxlength="15" class="form-control" id="cell"
+                                    pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})"
+                                    placeholder="000-000-0000" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="email">Email Address *</label>
+                                <input type="email" maxlength="254" class="form-control" id="email"
+                                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+                                    placeholder="Contact Email Address" required>
+                            </div>
+                        </div>
+                        <small id="passwordHelpBlock" class="form-text text-muted">information will be kept
+                            confidential
+                            and used only in an emergency.</small>
+
+                        <br />
+                        <h4 class="font-weight-bold text-info mb-4 mt-4">Criminal Background</h4>
+                        <div class="form-group col-md-4">
+                            <label class="mb-3">Have you ever been convicted of a crime? *</label><br />
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="yescrime" name="customRadioInline1" class="custom-control-input"
+                                    required>
+                                <label class="custom-control-label" for="yescrime">Yes</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="nocrime" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="nocrime">No</label>
+                            </div>
+                        </div>
+
+                        <br />
+                        <h4 class="font-weight-bold text-info mb-4 mt-4">Work Experience</h4>
+                        <p class="mb-4">Please provide your most recent employment information.</p>
+                        <h5 class="mb-4"><u>Employer #1</u></h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <label for="workExp1startDate">Start Date</label>
+                                    <input type="month" id="workExp1startDate" class="form-control">
                                 </div>
-                                <div class="form-group col-md-4">
-                                    <label for="middle">Middle Name</label>
-                                    <input type="text" class="form-control" id="middle" maxlength="35"
-                                        placeholder="Middle Name">
+                                <div class="col-md-3 form-group">
+                                    <label for="workExp1endDate">End Date</label>
+                                    <input type="month" id="workExp1endDate" class="form-control">
                                 </div>
-                                <div class="form-group col-md-4">
-                                    <label for="last">Last Name *</label>
-                                    <input type="text" class="form-control" id="last" maxlength="35"
-                                        placeholder="Last Name" required>
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp1companyName">Company Name</label>
+                                    <input type="text" maxlength="70" id="workExp1companyName" class="form-control">
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputAddress">Address *</label>
-                                    <input type="text" class="form-control" id="inputAddress" maxlength="35"
-                                        placeholder="1234 Main St" required>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp1Address">Address</label>
+                                    <input type="text" maxlength="70" id="workExp1Address" class="form-control">
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label for="inputAddress2">Address 2</label>
-                                    <input type="text" class="form-control" id="inputAddress2" maxlength="35"
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp1Address2">Address 2</label>
+                                    <input type="text" maxlength="70" id="workExp1Address2" class="form-control"
                                         placeholder="Apartment, studio, or floor">
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputCity">City *</label>
-                                    <input type="text" class="form-control" id="inputCity" maxlength="35" required>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp1City">City</label>
+                                    <input type="text" maxlength="35" id="workExp1City" class="form-control">
                                 </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputState">State *</label>
-                                    <select id="inputState" class="form-control" required>
-                                        <option value="">Select a State</option>
+                                <div class="col-md-3 form-group">
+                                    <label for="workExp1State">State</label>
+                                    <select id="workExp1State" class="form-control">
+                                        <option selected>Select a State</option>
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
                                         <option value="AZ">Arizona</option>
@@ -129,842 +401,577 @@
                                         <option value="WY">Wyoming</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-md-2">
-                                    <label for="inputZip">Zip *</label>
-                                    <input type="text" class="form-control" id="inputZip" maxlength="9" required>
+                                <div class="col-md-3 form-group">
+                                    <label for="workExp1Zip">Zip</label>
+                                    <input type="text" id="workExp1Zip" class="form-control" maxlength="9">
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-4">
-                                    <label for="phone">Telephone</label>
-                                    <input type="tel" class="form-control" maxlength="15" class="form-control"
-                                        id="phone" pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})" placeholder="000-000-0000">
+                            <div class="row">
+                                <div class="col-md-4 from-group">
+                                    <label for="workExp1Title">Title/Position</label>
+                                    <input type="text" id="workExp1Title" maxlength="70" class="form-control">
                                 </div>
-                                <div class="form-group col-md-4">
-                                    <label for="cell">Cell Phone *</label>
-                                    <input type="tel" class="form-control" maxlength="15" class="form-control" id="cell"
-                                        pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})" placeholder="000-000-0000" required>
+                                <div class="col-md-4 from-group">
+                                    <label for="workExp1SupervisorName">Supervisor Name</label>
+                                    <input type="text" id="workExp1SupervisorName" maxlength="70" class="form-control"
+                                        pattern="[A-Za-z]*">
                                 </div>
-                                <div class="form-group col-md-4">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" maxlength="254" class="form-control" id="email"
-                                        placeholder="Email Address" required>
+                                <div class="col-md-4 form-group">
+                                    <label for="workExp1Telephone">Supervisor Telephone</label>
+                                    <input type="tel" class="form-control" id="workExp1Telephone"
+                                        pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})"
+                                        placeholder="000-000-0000">
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp1Duties">Duties</label>
+                                    <textarea id="workExp1Duties" class="form-control" maxlength="300"></textarea>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp1LeaveReason">Reason for Leaving</label>
+                                    <textarea id="workExp1LeaveReason" maxlength="300" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <h5 class="mb-4"><u>Employer #2</u></h5>
+                        <div class="container mb-5">
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <label for="workExp2startDate">Start Date</label>
+                                    <input type="month" id="workExp2startDate" class="form-control">
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <label for="workExp2endDate">End Date</label>
+                                    <input type="month" id="workExp2endDate" class="form-control">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp2companyName">Company Name</label>
+                                    <input type="text" maxlength="70" id="workExp2companyName" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp2Address">Address</label>
+                                    <input type="text" maxlength="70" id="workExp2Address" class="form-control">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp2Address2">Address 2</label>
+                                    <input type="text" maxlength="70" id="workExp2Address2" class="form-control"
+                                        placeholder="Apartment, studio, or floor">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp2City">City</label>
+                                    <input type="text" maxlength="35" id="workExp2City" class="form-control">
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <label for="workExp2State">State</label>
+                                    <select id="workExp2State" class="form-control">
+                                        <option selected>Select a State</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <label for="workExp2Zip">Zip</label>
+                                    <input type="number" id="workExp1Zip" class="form-control" maxlength="9">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 from-group">
+                                    <label for="workExp2Title">Title/Position</label>
+                                    <input type="text" id="workExp2Title" maxlength="70" class="form-control">
+                                </div>
+                                <div class="col-md-4 from-group">
+                                    <label for="workExp2SupervisorName">Supervisor Name</label>
+                                    <input type="text" id="workExp2SupervisorName" maxlength="70" class="form-control"
+                                        pattern="[A-Za-z]*">
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label for="workExp2Telephone">Supervisor Telephone</label>
+                                    <input type="tel" class="form-control" id="workExp2Telephone"
+                                        pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})"
+                                        placeholder="000-000-0000">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp2Duties">Duties</label>
+                                    <textarea id="workExp2Duties" maxlength="300" class="form-control"></textarea>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="workExp2LeaveReason">Reason for Leaving</label>
+                                    <textarea id="workExp2LeaveReason" maxlength="300" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Camille's Education Section -->
+                        <h4 class="font-weight-bold text-info mb-4 mt-4">Education</h4>
+                        <div class="container">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label id="ssn">SSN#</label>
+                                    <p> Please provide your highest level of education.</p>
+                                    <label for="eduLevel">Education Level *</label>
+                                    <select id="inputEdu" class="form-control" required>
+                                        <option selected>Select Highest Level of Education</option>
+                                        <option value="HS">High School</option>
+                                        <option value="AS">Associate's</option>
+                                        <option value="BS">Bachelor's</option>
+                                        <option value="MS">Master's</option>
+                                        <option value="PHD">Doctorate</option>
+                                    </select>
+                                    <label for="major">Major</label>
+                                    <input type="text" class="form-control" maxlength="35" id="major">
+                                    <label for="schoolName">School Name *</label>
+                                    <input type="text" maxlength="70" class="form-control" id="schoolName"
+                                        placeholder="" required>
+                                    <label for="schoolCity">City</label>
+                                    <input type="text" maxlength="35" class="form-control" id="schoolCity"
+                                        placeholder="" required>
                                     <div class="form-row">
-                                        <input type="text" class="form-control col-md-2" name="ssn-1" maxlength="3"
-                                            required> -
-                                        <input type="text" class="form-control col-md-2" name="ssn-2" maxlength="2"
-                                            required>-
-                                        <input type="text" class="form-control col-md-2" name="ssn-3" maxlength="4"
-                                            required>
+                                        <div class="form-group col-md-6">
+                                            <label for="schoolState">State</label>
+                                            <select id="inputState" class="form-control" required>
+                                                <option selected>Select a State</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="WV">West Virginia</option>
+                                                <option value="WI">Wisconsin</option>
+                                                <option value="WY">Wyoming</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <p class="text-danger mt-2" id="validate"></p>
+                                    <label for="gradDate">Graduation Date *</label>
+                                    <input type="month" class="form-control" id="gradDate" placeholder=""
+                                        min="1920-01-01" value="2020-04" required>
                                 </div>
                             </div>
-                            <div class="form-row mb-3">
-                                <div class="form-group col-md-4">
-                                    <label for="position">Position Applied for *</label>
-                                    <input type="text" class="form-control" id="position" maxlength="100" required>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputAddress2">Desired Salary</label>
-                                    <input type="number" class="form-control" id="inputAddress2" placeholder="$">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="date">Date Available for Work *</label>
-                                    <input type="date" class="form-control" id="dateAvailable" min="" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-4">
-                                    <label for="position">Days available to work:</label>
-                                    <div class="weekDays-selector">
-                                        <input type="checkbox" id="weekday-mon" class="weekday" />
-                                        <label for="weekday-mon">Mon</label>
-                                        <input type="checkbox" id="weekday-tue" class="weekday" />
-                                        <label for="weekday-tue">Tue</label>
-                                        <input type="checkbox" id="weekday-wed" class="weekday" />
-                                        <label for="weekday-wed">Wed</label>
-                                        <input type="checkbox" id="weekday-thu" class="weekday" />
-                                        <label for="weekday-thu">Thu</label>
-                                        <input type="checkbox" id="weekday-fri" class="weekday" />
-                                        <label for="weekday-fri">Fri</label>
-                                        <input type="checkbox" id="weekday-sat" class="weekday" />
-                                        <label for="weekday-sat">Sat</label>
-                                        <input type="checkbox" id="weekday-sun" class="weekday" />
-                                        <label for="weekday-sun">Sun</label>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label class="mb-3" for="last">Employment Desired</label><br />
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
-                                            value="option1">
-                                        <label class="form-check-label" for="inlineCheckbox1">Full-Time</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
-                                            value="option2">
-                                        <label class="form-check-label" for="inlineCheckbox2">Part-Time</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
-                                            value="option3">
-                                        <label class="form-check-label" for="inlineCheckbox3">Seasonal</label>
-                                    </div>
-                                    <small id="passwordHelpBlock" class="form-text text-muted">Select All That
-                                        Apply</small>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label class="mb-3">Are you at least 18? *</label><br />
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                            class="custom-control-input" required>
-                                        <label class="custom-control-label" for="customRadioInline1">Yes</label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                                            class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadioInline2">No</label>
-                                    </div>
-                                    <small id="passwordHelpBlock" class="form-text text-muted">
-                                        All employees must be 18 or over.</small>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-4">
-                                    <label for="hours">How many hours can you work weekly?</label>
-                                    <input type="number" max="50" class="form-control" id="hours">
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <label class="mb-3">Can you work nights? *</label><br />
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="nights1" name="nights" class="custom-control-input">
-                                        <label class="custom-control-label" for="nights1">Yes</label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="nights2" name="nights" class="custom-control-input">
-                                        <label class="custom-control-label" for="nights2">No</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <br />
-                            <h4 class="font-weight-bold text-info mb-4 mt-4">Emergency Contact</h4>
-                            <div class="form-row">
-                                <div class="form-group col-md-4">
-                                    <label for="first">First Name *</label>
-                                    <input type="text" class="form-control" id="first" maxlength="35"
-                                        placeholder="Contact First Name" required>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="middle">Middle Name</label>
-                                    <input type="text" class="form-control" id="middle" maxlength="35"
-                                        placeholder="Contact Middle Name">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="last">Last Name *</label>
-                                    <input type="text" class="form-control" id="last" maxlength="35"
-                                        placeholder="Contact Last Name" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-4">
-                                    <label for="phone">Telephone</label>
-                                    <input type="tel" class="form-control" maxlength="15" class="form-control"
-                                        id="phone" pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})" placeholder="000-000-0000">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="cell">Cell Phone *</label>
-                                    <input type="tel" class="form-control" maxlength="15" class="form-control" id="cell"
-                                        pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})" placeholder="000-000-0000" required>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" maxlength="254" class="form-control" id="email"
-                                        placeholder="Contact Email Address" required>
-                                </div>
-                            </div>
-                            <small id="passwordHelpBlock" class="form-text text-muted">information will be kept
-                                confidential
-                                and used only in an emergency.</small>
-
-                            <br />
-                            <h4 class="font-weight-bold text-info mb-4 mt-4">Criminal Background</h4>
-                            <div class="form-group col-md-4">
-                                <label class="mb-3">Have you ever been convicted of a crime? *</label><br />
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="yescrime" name="customRadioInline1"
-                                        class="custom-control-input" required>
-                                    <label class="custom-control-label" for="yescrime">Yes</label>
-                                </div>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="nocrime" name="customRadioInline1"
-                                        class="custom-control-input">
-                                    <label class="custom-control-label" for="nocrime">No</label>
-                                </div>
-                            </div>
-
-                            <br />
-                            <h4 class="font-weight-bold text-info mb-4 mt-4">Work Experience</h4>
-                <p class="mb-4">Please provide your most recent employment information.</p>
-                <h5 class="mb-4"><u>Employer #1</u></h5>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 form-group">
-                            <label for="workExp1startDate">Start Date</label>
-                            <input type="date" id="workExp1startDate" class="form-control">
                         </div>
-                        <div class="col-md-3 form-group">
-                            <label for="workExp1endDate">End Date</label>
-                            <input type="date" id="workExp1endDate" class="form-control">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="workExp1companyName">Company Name</label>
-                            <input type="text" maxlength="35" id="workExp1companyName" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label for="workExp1Address">Address</label>
-                            <input type="text" maxlength="35" id="workExp1Address" class="form-control">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="workExp1Address2">Address 2</label>
-                            <input type="text" maxlength="35" id="workExp1Address2" class="form-control"
-                                placeholder="Apartment, studio, or floor">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label for="workExp1City">City</label>
-                            <input type="text" maxlength="35" id="workExp1City" class="form-control">
-                        </div>
-                        <div class="col-md-3 form-group">
-                            <label for="workExp1State">State</label>
-                            <select id="workExp1State" class="form-control">
-                                <option selected>Select a State</option>
-                                <option value="AL">Alabama</option>
-                                <option value="AK">Alaska</option>
-                                <option value="AZ">Arizona</option>
-                                <option value="AR">Arkansas</option>
-                                <option value="CA">California</option>
-                                <option value="CO">Colorado</option>
-                                <option value="CT">Connecticut</option>
-                                <option value="DE">Delaware</option>
-                                <option value="FL">Florida</option>
-                                <option value="GA">Georgia</option>
-                                <option value="HI">Hawaii</option>
-                                <option value="ID">Idaho</option>
-                                <option value="IL">Illinois</option>
-                                <option value="IN">Indiana</option>
-                                <option value="IA">Iowa</option>
-                                <option value="KS">Kansas</option>
-                                <option value="KY">Kentucky</option>
-                                <option value="LA">Louisiana</option>
-                                <option value="ME">Maine</option>
-                                <option value="MD">Maryland</option>
-                                <option value="MA">Massachusetts</option>
-                                <option value="MI">Michigan</option>
-                                <option value="MN">Minnesota</option>
-                                <option value="MS">Mississippi</option>
-                                <option value="MO">Missouri</option>
-                                <option value="MT">Montana</option>
-                                <option value="NE">Nebraska</option>
-                                <option value="NV">Nevada</option>
-                                <option value="NH">New Hampshire</option>
-                                <option value="NJ">New Jersey</option>
-                                <option value="NM">New Mexico</option>
-                                <option value="NY">New York</option>
-                                <option value="NC">North Carolina</option>
-                                <option value="ND">North Dakota</option>
-                                <option value="OH">Ohio</option>
-                                <option value="OK">Oklahoma</option>
-                                <option value="OR">Oregon</option>
-                                <option value="PA">Pennsylvania</option>
-                                <option value="RI">Rhode Island</option>
-                                <option value="SC">South Carolina</option>
-                                <option value="SD">South Dakota</option>
-                                <option value="TN">Tennessee</option>
-                                <option value="TX">Texas</option>
-                                <option value="UT">Utah</option>
-                                <option value="VT">Vermont</option>
-                                <option value="VA">Virginia</option>
-                                <option value="WA">Washington</option>
-                                <option value="WV">West Virginia</option>
-                                <option value="WI">Wisconsin</option>
-                                <option value="WY">Wyoming</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3 form-group">
-                            <label for="workExp1Zip">Zip</label>
-                            <input type="text" id="workExp1Zip" class="form-control" maxlength="9">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 from-group">
-                            <label for="workExp1Title">Title/Position</label>
-                            <input type="text" id="workExp1Title" maxlength="35" class="form-control">
-                        </div>
-                        <div class="col-md-4 from-group">
-                            <label for="workExp1SupervisorName">Supervisor Name</label>
-                            <input type="text" id="workExp1SupervisorName" maxlength="35" class="form-control" pattern="[A-Za-z]*">
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <label for="workExp1Telephone">Supervisor Telephone</label>
-                            <input type="tel" class="form-control" id="workExp1Telephone"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label for="workExp1Duties">Duties</label>
-                            <textarea id="workExp1Duties" class="form-control" maxlength="300"></textarea>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="workExp1LeaveReason">Reason for Leaving</label>
-                            <textarea id="workExp1LeaveReason" maxlength="300" class="form-control"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <br/>
-                <h5 class="mb-4"><u>Employer #2</u></h5>
-                <div class="container mb-5">
-                    <div class="row">
-                        <div class="col-md-3 form-group">
-                            <label for="workExp2startDate">Start Date</label>
-                            <input type="date" id="workExp2startDate" class="form-control">
-                        </div>
-                        <div class="col-md-3 form-group">
-                            <label for="workExp2endDate">End Date</label>
-                            <input type="date" id="workExp2endDate" class="form-control">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="workExp2companyName">Company Name</label>
-                            <input type="text" maxlength="35" id="workExp2companyName" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label for="workExp2Address">Address</label>
-                            <input type="text" maxlength="35" id="workExp2Address" class="form-control">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="workExp2Address2">Address 2</label>
-                            <input type="text" maxlength="35" id="workExp2Address2" class="form-control"
-                                placeholder="Apartment, studio, or floor">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label for="workExp2City">City</label>
-                            <input type="text" maxlength="35" id="workExp2City" class="form-control">
-                        </div>
-                        <div class="col-md-3 form-group">
-                            <label for="workExp2State">State</label>
-                            <select id="workExp2State" class="form-control">
-                                <option selected>Select a State</option>
-                                <option value="AL">Alabama</option>
-                                <option value="AK">Alaska</option>
-                                <option value="AZ">Arizona</option>
-                                <option value="AR">Arkansas</option>
-                                <option value="CA">California</option>
-                                <option value="CO">Colorado</option>
-                                <option value="CT">Connecticut</option>
-                                <option value="DE">Delaware</option>
-                                <option value="FL">Florida</option>
-                                <option value="GA">Georgia</option>
-                                <option value="HI">Hawaii</option>
-                                <option value="ID">Idaho</option>
-                                <option value="IL">Illinois</option>
-                                <option value="IN">Indiana</option>
-                                <option value="IA">Iowa</option>
-                                <option value="KS">Kansas</option>
-                                <option value="KY">Kentucky</option>
-                                <option value="LA">Louisiana</option>
-                                <option value="ME">Maine</option>
-                                <option value="MD">Maryland</option>
-                                <option value="MA">Massachusetts</option>
-                                <option value="MI">Michigan</option>
-                                <option value="MN">Minnesota</option>
-                                <option value="MS">Mississippi</option>
-                                <option value="MO">Missouri</option>
-                                <option value="MT">Montana</option>
-                                <option value="NE">Nebraska</option>
-                                <option value="NV">Nevada</option>
-                                <option value="NH">New Hampshire</option>
-                                <option value="NJ">New Jersey</option>
-                                <option value="NM">New Mexico</option>
-                                <option value="NY">New York</option>
-                                <option value="NC">North Carolina</option>
-                                <option value="ND">North Dakota</option>
-                                <option value="OH">Ohio</option>
-                                <option value="OK">Oklahoma</option>
-                                <option value="OR">Oregon</option>
-                                <option value="PA">Pennsylvania</option>
-                                <option value="RI">Rhode Island</option>
-                                <option value="SC">South Carolina</option>
-                                <option value="SD">South Dakota</option>
-                                <option value="TN">Tennessee</option>
-                                <option value="TX">Texas</option>
-                                <option value="UT">Utah</option>
-                                <option value="VT">Vermont</option>
-                                <option value="VA">Virginia</option>
-                                <option value="WA">Washington</option>
-                                <option value="WV">West Virginia</option>
-                                <option value="WI">Wisconsin</option>
-                                <option value="WY">Wyoming</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3 form-group">
-                            <label for="workExp2Zip">Zip</label>
-                            <input type="number" id="workExp1Zip" class="form-control" maxlength="9">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 from-group">
-                            <label for="workExp2Title">Title/Position</label>
-                            <input type="text" id="workExp2Title" maxlength="35" class="form-control">
-                        </div>
-                        <div class="col-md-4 from-group">
-                            <label for="workExp2SupervisorName">Supervisor Name</label>
-                            <input type="text" id="workExp2SupervisorName" maxlength="35" class="form-control" pattern="[A-Za-z]*">
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <label for="workExp2Telephone">Supervisor Telephone</label>
-                            <input type="tel" class="form-control" id="workExp2Telephone"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label for="workExp2Duties">Duties</label>
+                        <h4 class="font-weight-bold text-info mb-4 mt-4">Additional Skills</h4>
+                        <div class="col-md-12 form-group">
+                            <label for="workExp2Duties">Provide any additional skills, experiences and other important
+                                information that supports your application that has not been listed elsewhere in this
+                                application.</label>
                             <textarea id="workExp2Duties" maxlength="300" class="form-control"></textarea>
                         </div>
-                        <div class="col-md-6 form-group">
-                            <label for="workExp2LeaveReason">Reason for Leaving</label>
-                            <textarea id="workExp2LeaveReason" maxlength="300" class="form-control"></textarea>
-                        </div>
-                    </div>
-                </div>
-
-
-               
-                <br />
-                <!-- Camille's Education Section -->
-                <h4 class="font-weight-bold text-info mb-4 mt-4">Education</h4>
-                <div class="container">
-                    <div class="form-row">
-                        <div class="form-group col-md-6" style = "padding: 1.2%;">
-                           <p> Please provide your highest level of education.</p>
-                            <label for="eduLevel">Education Level *</label>
-                            <select id="inputEdu" class="form-control" required>
-                                <option selected>Select Highest Level of Education</option>
-                                <option value="HS">High School</option>
-                                <option value="AS">Associate's</option>
-                                <option value="BS">Bachelor's</option>
-                                <option value="MS">Master's</option>
-                                <option value="PHD">Doctorate</option>
-                            </select>
-                            <label for="major">Major *</label>
-                            <input type="text" class="form-control" maxlength="35" id="major" required>
-                            <label for="schoolName">School Name *</label>
-                            <input type="text" maxlength="50" class="form-control" id="schoolName"
-                                placeholder="" required>
-                            <label for="schoolCity">City</label>
-                            <input type="text" maxlength="60" class="form-control" id="schoolCity" placeholder="" required>
+                        <br />
+                        <br />
+                        <h4 class="font-weight-bold text-info mb-4 mt-4">References</h4>
+                        <p>Please provide two references other than relatives or previous employers.</p>
+                        <div class="container">
                             <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="schoolState">State</label>
-                                    <select id="inputState" class="form-control" required>
-                                        <option selected>Select a State</option>
-                                        <option value="AL">Alabama</option>
-                                        <option value="AK">Alaska</option>
-                                        <option value="AZ">Arizona</option>
-                                        <option value="AR">Arkansas</option>
-                                        <option value="CA">California</option>
-                                        <option value="CO">Colorado</option>
-                                        <option value="CT">Connecticut</option>
-                                        <option value="DE">Delaware</option>
-                                        <option value="FL">Florida</option>
-                                        <option value="GA">Georgia</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="ID">Idaho</option>
-                                        <option value="IL">Illinois</option>
-                                        <option value="IN">Indiana</option>
-                                        <option value="IA">Iowa</option>
-                                        <option value="KS">Kansas</option>
-                                        <option value="KY">Kentucky</option>
-                                        <option value="LA">Louisiana</option>
-                                        <option value="ME">Maine</option>
-                                        <option value="MD">Maryland</option>
-                                        <option value="MA">Massachusetts</option>
-                                        <option value="MI">Michigan</option>
-                                        <option value="MN">Minnesota</option>
-                                        <option value="MS">Mississippi</option>
-                                        <option value="MO">Missouri</option>
-                                        <option value="MT">Montana</option>
-                                        <option value="NE">Nebraska</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="NH">New Hampshire</option>
-                                        <option value="NJ">New Jersey</option>
-                                        <option value="NM">New Mexico</option>
-                                        <option value="NY">New York</option>
-                                        <option value="NC">North Carolina</option>
-                                        <option value="ND">North Dakota</option>
-                                        <option value="OH">Ohio</option>
-                                        <option value="OK">Oklahoma</option>
-                                        <option value="OR">Oregon</option>
-                                        <option value="PA">Pennsylvania</option>
-                                        <option value="RI">Rhode Island</option>
-                                        <option value="SC">South Carolina</option>
-                                        <option value="SD">South Dakota</option>
-                                        <option value="TN">Tennessee</option>
-                                        <option value="TX">Texas</option>
-                                        <option value="UT">Utah</option>
-                                        <option value="VT">Vermont</option>
-                                        <option value="VA">Virginia</option>
-                                        <option value="WA">Washington</option>
-                                        <option value="WV">West Virginia</option>
-                                        <option value="WI">Wisconsin</option>
-                                        <option value="WY">Wyoming</option>
-                                    </select>
+                                <div class="form-group col-md-6" style="padding: 1%;">
+                                    <!--References #1-->
+                                    <h5><u>Reference #1</u></h5>
+                                    <label for="referenceName01">Name</label>
+                                    <input type="text" maxlength="70" class="form-control" id="referenceName01"
+                                        pattern="[A-Za-z]*" placeholder="">
+                                    <label for="referenceTitle01">Title</label>
+                                    <input type="text" maxlength="70" class="form-control" id="referenceTitle01"
+                                        placeholder="">
+                                    <label for="referenceCompany01">Company</label>
+                                    <input type="text" maxlength="70" class="form-control" id="referenceCompany01"
+                                        placeholder="">
+                                    <label for="referenceAddress01">Address</label>
+                                    <input type="text" maxlength="70" class="form-control" id="referenceAddress01"
+                                        placeholder="">
+                                    <label for="referenceCity01">City</label>
+                                    <input type="text" maxlength="35" class="form-control" id="referenceCity01"
+                                        placeholder="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="referenceState01">State</label>
+                                            <select id="inputState" class="form-control">
+                                                <option selected>Select a State</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="WV">West Virginia</option>
+                                                <option value="WI">Wisconsin</option>
+                                                <option value="WY">Wyoming</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="from-group col-md-6">
+                                            <label for="referenceZip01">Zip</label>
+                                            <input type="text" maxlength="9" class="form-control" id="referenceZip01"
+                                                pattern="[0-9]*" placeholder="">
+                                        </div>
+                                    </div>
+                                    <label for="referenceTelephone01">Telephone</label>
+                                    <input type="tel" maxlength="15" class="form-control" id="referenceTelephone01"
+                                        pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})"
+                                        placeholder="000-000-0000">
+                                    <label for="referenceEmail01">Email Address</label>
+                                    <input type="email" maxlength="254" class="form-control" id="referenceEmail01"
+                                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6" style="padding: 1%">
+                                    <!--References #2-->
+                                    <h5><u>Reference #2</u></h5>
+                                    <label for="referenceName02">Name</label>
+                                    <input type="text" maxlength="70" class="form-control" id="referenceName02"
+                                        pattern="[A-Za-z]*" placeholder="">
+                                    <label for="referenceTitle02">Title</label>
+                                    <input type="text" maxlength="70" class="form-control" id="referenceTitle02"
+                                        placeholder="">
+                                    <label for="referenceCompany02">Company</label>
+                                    <input type="text" maxlength="70" class="form-control" id="referenceCompany02"
+                                        placeholder="">
+                                    <label for="referenceAddress02">Address</label>
+                                    <input type="text" maxlength="70" class="form-control" id="referenceAddress02"
+                                        placeholder="">
+                                    <label for="referenceCity02">City</label>
+                                    <input type="text" maxlength="35" class="form-control" id="referenceCity02"
+                                        placeholder="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="referenceState02">State</label>
+                                            <select id="inputState" class="form-control">
+                                                <option selected>Select a State</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="WV">West Virginia</option>
+                                                <option value="WI">Wisconsin</option>
+                                                <option value="WY">Wyoming</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="from-group col-md-6">
+                                            <label for="referenceZip02">Zip</label>
+                                            <input type="text" maxlength="9" class="form-control" id="referenceZip02"
+                                                pattern="[0-9]*" placeholder="">
+                                        </div>
+                                    </div>
+                                    <label for="referenceTelephone02">Telephone</label>
+                                    <input type="tel" maxlength="15" class="form-control" id="referenceTelephone02"
+                                        pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})"
+                                        placeholder="000-000-0000">
+                                    <label for="referenceEmail02">Email Address</label>
+                                    <input type="email" maxlength="254" class="form-control" id="referenceEmail02"
+                                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" placeholder="">
                                 </div>
                             </div>
-                            <label for="gradDate">Graduation Date *</label>
-                            <input type="date" class="form-control" id="gradDate" placeholder="" required>
                         </div>
-                        <div class="form-group col-md-6" style= "padding: 2%;">
-                             <h5><u>Additional Skills (Optional)</u></h5>
-                            <label for="skill1">Skill #1</label>
-                            <input type="text" maxlength="35" class="form-control" id="skill1" placeholder="">
-                            <label for="skill2">Skill #2</label>
-                            <input type="text" maxlength="35" class="form-control" id="skill2" placeholder="">
-                            <label for="skill3">Skill #3</label>
-                            <input type="text" maxlength="35" class="form-control" id="skill3" placeholder="">
+                        <h4 class="font-weight-bold text-info mb-4 mt-4">Miscellaneous</h4>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <label class="mb-3">Do you have a drivers license?</label><br />
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="yesLicense" name="driversRadio" class="custom-control-input"
+                                        value="Driver">
+                                    <label class="custom-control-label" for="yesLicense">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="noLicense" name="driversRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="noLicense">No</label>
+                                </div>
+                            </div>
+                            <div class="col-md-5 offset-1">
+                                <label class="mb-3">Have you ever served in the military?</label><br />
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="yesMilitary" name=militaryRadio
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="yesMilitary">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="noMilitary" name="militaryRadio"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="noMilitary">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="form-group col-md-4">
+                                <label for="licenseNumber">Drivers License #</label>
+                                <input type="text" class="form-control" maxlength="25" id="driverLicense">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-2">
+                                <label for="licenseState">State of Issue</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Select a State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="expiresOn">Expires On</label>
+                                <input type="date" class="form-control" id="expiresOn" placeholder="">
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <br/>
-                <br/>
-                <h4 class="font-weight-bold text-info mb-4 mt-4">References</h4>
-                            <p>Please provide two references other than relatives or previous employers.</p>
-                            <div class="container">
-                                <div class="form-row">
-                                    <div class="form-group col-md-6" style="padding: 1%;">
-                                        <!--References #1-->
-                                        <h5><u>Reference #1</u></h5>
-                                        <label for="referenceName01">Name</label>
-                                        <input type="text" maxlength="70" class="form-control" id="referenceName01"
-                                            pattern="[A-Za-z]*" placeholder="">
-                                        <label for="referenceTitle01">Title</label>
-                                        <input type="text" maxlength="70" class="form-control" id="referenceTitle01"
-                                            placeholder="">
-                                        <label for="referenceCompany01">Company</label>
-                                        <input type="text" maxlength="70" class="form-control" id="referenceCompany01"
-                                            placeholder="">
-                                        <label for="referenceAddress01">Address</label>
-                                        <input type="text" maxlength="35" class="form-control" id="referenceAddress01"
-                                            placeholder="">
-                                        <label for="referenceCity01">City</label>
-                                        <input type="text" maxlength="25" class="form-control" id="referenceCity01"
-                                            placeholder="">
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label for="referenceState01">State</label>
-                                                <select id="inputState" class="form-control">
-                                                    <option selected>Select a State</option>
-                                                    <option value="AL">Alabama</option>
-                                                    <option value="AK">Alaska</option>
-                                                    <option value="AZ">Arizona</option>
-                                                    <option value="AR">Arkansas</option>
-                                                    <option value="CA">California</option>
-                                                    <option value="CO">Colorado</option>
-                                                    <option value="CT">Connecticut</option>
-                                                    <option value="DE">Delaware</option>
-                                                    <option value="FL">Florida</option>
-                                                    <option value="GA">Georgia</option>
-                                                    <option value="HI">Hawaii</option>
-                                                    <option value="ID">Idaho</option>
-                                                    <option value="IL">Illinois</option>
-                                                    <option value="IN">Indiana</option>
-                                                    <option value="IA">Iowa</option>
-                                                    <option value="KS">Kansas</option>
-                                                    <option value="KY">Kentucky</option>
-                                                    <option value="LA">Louisiana</option>
-                                                    <option value="ME">Maine</option>
-                                                    <option value="MD">Maryland</option>
-                                                    <option value="MA">Massachusetts</option>
-                                                    <option value="MI">Michigan</option>
-                                                    <option value="MN">Minnesota</option>
-                                                    <option value="MS">Mississippi</option>
-                                                    <option value="MO">Missouri</option>
-                                                    <option value="MT">Montana</option>
-                                                    <option value="NE">Nebraska</option>
-                                                    <option value="NV">Nevada</option>
-                                                    <option value="NH">New Hampshire</option>
-                                                    <option value="NJ">New Jersey</option>
-                                                    <option value="NM">New Mexico</option>
-                                                    <option value="NY">New York</option>
-                                                    <option value="NC">North Carolina</option>
-                                                    <option value="ND">North Dakota</option>
-                                                    <option value="OH">Ohio</option>
-                                                    <option value="OK">Oklahoma</option>
-                                                    <option value="OR">Oregon</option>
-                                                    <option value="PA">Pennsylvania</option>
-                                                    <option value="RI">Rhode Island</option>
-                                                    <option value="SC">South Carolina</option>
-                                                    <option value="SD">South Dakota</option>
-                                                    <option value="TN">Tennessee</option>
-                                                    <option value="TX">Texas</option>
-                                                    <option value="UT">Utah</option>
-                                                    <option value="VT">Vermont</option>
-                                                    <option value="VA">Virginia</option>
-                                                    <option value="WA">Washington</option>
-                                                    <option value="WV">West Virginia</option>
-                                                    <option value="WI">Wisconsin</option>
-                                                    <option value="WY">Wyoming</option>
-                                                </select>
-                                            </div>
 
-                                            <div class="from-group col-md-6">
-                                                <label for="referenceZip01">Zip</label>
-                                                <input type="text" maxlength="9" class="form-control"
-                                                    id="referenceZip01" pattern="[0-9]*" placeholder="">
-                                            </div>
-                                        </div>
-                                        <label for="referenceTelephone01">Telephone</label>
-                                        <input type="tel" maxlength="15" class="form-control" id="referenceTelephone01"
-                                            pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})" placeholder="000-000-0000">
-                                        <label for="referenceEmail01">Email Address</label>
-                                        <input type="email" maxlength="254" class="form-control" id="referenceEmail01"
-                                            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" placeholder="">
-                                    </div>
-                                    <div class="form-group col-md-6" style="padding: 1%">
-                                        <!--References #2-->
-                                        <h5><u>Reference #2</u></h5>
-                                        <label for="referenceName02">Name</label>
-                                        <input type="text" maxlength="70" class="form-control" id="referenceName02"
-                                            pattern="[A-Za-z]*" placeholder="">
-                                        <label for="referenceTitle02">Title</label>
-                                        <input type="text" maxlength="70" class="form-control" id="referenceTitle02"
-                                            placeholder="">
-                                        <label for="referenceCompany02">Company</label>
-                                        <input type="text" maxlength="70" class="form-control" id="referenceCompany02"
-                                            placeholder="">
-                                        <label for="referenceAddress02">Address</label>
-                                        <input type="text" maxlength="35" class="form-control" id="referenceAddress02"
-                                            placeholder="">
-                                        <label for="referenceCity02">City</label>
-                                        <input type="text" maxlength="25" class="form-control" id="referenceCity02"
-                                            placeholder="">
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label for="referenceState02">State</label>
-                                                <select id="inputState" class="form-control">
-                                                    <option selected>Select a State</option>
-                                                    <option value="AL">Alabama</option>
-                                                    <option value="AK">Alaska</option>
-                                                    <option value="AZ">Arizona</option>
-                                                    <option value="AR">Arkansas</option>
-                                                    <option value="CA">California</option>
-                                                    <option value="CO">Colorado</option>
-                                                    <option value="CT">Connecticut</option>
-                                                    <option value="DE">Delaware</option>
-                                                    <option value="FL">Florida</option>
-                                                    <option value="GA">Georgia</option>
-                                                    <option value="HI">Hawaii</option>
-                                                    <option value="ID">Idaho</option>
-                                                    <option value="IL">Illinois</option>
-                                                    <option value="IN">Indiana</option>
-                                                    <option value="IA">Iowa</option>
-                                                    <option value="KS">Kansas</option>
-                                                    <option value="KY">Kentucky</option>
-                                                    <option value="LA">Louisiana</option>
-                                                    <option value="ME">Maine</option>
-                                                    <option value="MD">Maryland</option>
-                                                    <option value="MA">Massachusetts</option>
-                                                    <option value="MI">Michigan</option>
-                                                    <option value="MN">Minnesota</option>
-                                                    <option value="MS">Mississippi</option>
-                                                    <option value="MO">Missouri</option>
-                                                    <option value="MT">Montana</option>
-                                                    <option value="NE">Nebraska</option>
-                                                    <option value="NV">Nevada</option>
-                                                    <option value="NH">New Hampshire</option>
-                                                    <option value="NJ">New Jersey</option>
-                                                    <option value="NM">New Mexico</option>
-                                                    <option value="NY">New York</option>
-                                                    <option value="NC">North Carolina</option>
-                                                    <option value="ND">North Dakota</option>
-                                                    <option value="OH">Ohio</option>
-                                                    <option value="OK">Oklahoma</option>
-                                                    <option value="OR">Oregon</option>
-                                                    <option value="PA">Pennsylvania</option>
-                                                    <option value="RI">Rhode Island</option>
-                                                    <option value="SC">South Carolina</option>
-                                                    <option value="SD">South Dakota</option>
-                                                    <option value="TN">Tennessee</option>
-                                                    <option value="TX">Texas</option>
-                                                    <option value="UT">Utah</option>
-                                                    <option value="VT">Vermont</option>
-                                                    <option value="VA">Virginia</option>
-                                                    <option value="WA">Washington</option>
-                                                    <option value="WV">West Virginia</option>
-                                                    <option value="WI">Wisconsin</option>
-                                                    <option value="WY">Wyoming</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="from-group col-md-6">
-                                                <label for="referenceZip02">Zip</label>
-                                                <input type="text" maxlength="9" class="form-control"
-                                                    id="referenceZip02" pattern="[0-9]*" placeholder="">
-                                            </div>
-                                        </div>
-                                        <label for="referenceTelephone02">Telephone</label>
-                                        <input type="tel" maxlength="15" class="form-control" id="referenceTelephone02"
-                                            pattern="([0-9]{3}-[0-9]{3}-[0-9]{4})||([0-9]{3}[0-9]{3}[0-9]{4})" placeholder="000-000-0000">
-                                        <label for="referenceEmail02">Email Address</label>
-                                        <input type="email" maxlength="254" class="form-control" id="referenceEmail02"
-                                            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-                            <h4 class="font-weight-bold text-info mb-4 mt-4">Miscellaneous</h4>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <label class="mb-3">Do you have a drivers license?</label><br />
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="yesLicense" name="driversRadio"
-                                            class="custom-control-input" value="Driver">
-                                        <label class="custom-control-label" for="yesLicense">Yes</label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="noLicense" name="driversRadio"
-                                            class="custom-control-input">
-                                        <label class="custom-control-label" for="noLicense">No</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 offset-1">
-                                    <label class="mb-3">Have you ever served in the military?</label><br />
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="yesMilitary" name=militaryRadio
-                                            class="custom-control-input">
-                                        <label class="custom-control-label" for="yesMilitary">Yes</label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="noMilitary" name="militaryRadio"
-                                            class="custom-control-input">
-                                        <label class="custom-control-label" for="noMilitary">No</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <br />
-                            <div class="row">
-                                <div class="form-group col-md-4">
-                                    <label for="licenseNumber">Drivers License #</label>
-                                    <input type="text" class="form-control" maxlength="25" id="driverLicense">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-md-2">
-                                    <label for="licenseState">State of Issue</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Select a State</option>
-                                        <option value="AL">Alabama</option>
-                                        <option value="AK">Alaska</option>
-                                        <option value="AZ">Arizona</option>
-                                        <option value="AR">Arkansas</option>
-                                        <option value="CA">California</option>
-                                        <option value="CO">Colorado</option>
-                                        <option value="CT">Connecticut</option>
-                                        <option value="DE">Delaware</option>
-                                        <option value="FL">Florida</option>
-                                        <option value="GA">Georgia</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="ID">Idaho</option>
-                                        <option value="IL">Illinois</option>
-                                        <option value="IN">Indiana</option>
-                                        <option value="IA">Iowa</option>
-                                        <option value="KS">Kansas</option>
-                                        <option value="KY">Kentucky</option>
-                                        <option value="LA">Louisiana</option>
-                                        <option value="ME">Maine</option>
-                                        <option value="MD">Maryland</option>
-                                        <option value="MA">Massachusetts</option>
-                                        <option value="MI">Michigan</option>
-                                        <option value="MN">Minnesota</option>
-                                        <option value="MS">Mississippi</option>
-                                        <option value="MO">Missouri</option>
-                                        <option value="MT">Montana</option>
-                                        <option value="NE">Nebraska</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="NH">New Hampshire</option>
-                                        <option value="NJ">New Jersey</option>
-                                        <option value="NM">New Mexico</option>
-                                        <option value="NY">New York</option>
-                                        <option value="NC">North Carolina</option>
-                                        <option value="ND">North Dakota</option>
-                                        <option value="OH">Ohio</option>
-                                        <option value="OK">Oklahoma</option>
-                                        <option value="OR">Oregon</option>
-                                        <option value="PA">Pennsylvania</option>
-                                        <option value="RI">Rhode Island</option>
-                                        <option value="SC">South Carolina</option>
-                                        <option value="SD">South Dakota</option>
-                                        <option value="TN">Tennessee</option>
-                                        <option value="TX">Texas</option>
-                                        <option value="UT">Utah</option>
-                                        <option value="VT">Vermont</option>
-                                        <option value="VA">Virginia</option>
-                                        <option value="WA">Washington</option>
-                                        <option value="WV">West Virginia</option>
-                                        <option value="WI">Wisconsin</option>
-                                        <option value="WY">Wyoming</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="expiresOn">Expires On</label>
-                                    <input type="date" class="form-control" id="expiresOn" placeholder="">
-                                </div>
-                            </div>
+                <div class="form-group col-md-12">
+                    <h4 class="font-weight-bold text-info mb-4 mt-4">APPLICATION ACKNOWLEDGEMENT AND WAIVER</h4>
+                    <p class="p-2">By submitting this application, I understand and agree that:<br><br>
+                        Applying for this job does not mean I will be hired. If a job is offered and accepted,
+                        UNFinished
+                        Business can end my employment at any time.
+                        I also have the right to quit the position at any time. Any changes in job duties must be signed
+                        off
+                        by the general manager. UNFinished Business
+                        may also change their benefits plan at any time.I give UNFinished Business permission to confirm
+                        all
+                        information on this application. If any of
+                        this information is untrue, I am subject to termination. I give UNFinished Business permission
+                        to
+                        contact all references. I take responsibility
+                        for this contact.I will be subjected to a drug and alcohol test prior to job acceptance. I
+                        consent
+                        to this. I agree to follow the drug and alcohol
+                        rules of UNFinished Business. If I am employed by UNFinished Business, and I fail to pass a drug
+                        and
+                        alcohol test, I may be fired. If I fail any
+                        job-related physicals, I may be fired. UNFinished Business will run a background check, and if I
+                        would like to see the results of this background
+                        check, I must submit a written request.I understand that the first 60 days on the job are a test
+                        run. I understand that during these 60 days, and
+                        after, myself and UNFinished Business can end my employment at any time. </p>
+                </div>
+                <div class="form-group col-md-6 mt-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                        <label class="form-check-label" for="gridCheck">By checking this box, I agree to be
+                            tested for illegal drugs. *</label>
                     </div>
                 </div>
-                
-            <div class="form-group col-md-12">
-                <h4 class="font-weight-bold text-info mb-4 mt-4">APPLICATION ACKNOWLEDGEMENT AND WAIVER</h4>
-                <p class="p-2">By submitting this application, I understand and agree that:<br><br>
-                    Applying for this job does not mean I will be hired. If a job is offered and accepted, UNFinished
-                    Business can end my employment at any time.
-                    I also have the right to quit the position at any time. Any changes in job duties must be signed off
-                    by the general manager. UNFinished Business
-                    may also change their benefits plan at any time.I give UNFinished Business permission to confirm all
-                    information on this application. If any of
-                    this information is untrue, I am subject to termination. I give UNFinished Business permission to
-                    contact all references. I take responsibility
-                    for this contact.I will be subjected to a drug and alcohol test prior to job acceptance. I consent
-                    to this. I agree to follow the drug and alcohol
-                    rules of UNFinished Business. If I am employed by UNFinished Business, and I fail to pass a drug and
-                    alcohol test, I may be fired. If I fail any
-                    job-related physicals, I may be fired. UNFinished Business will run a background check, and if I
-                    would like to see the results of this background
-                    check, I must submit a written request.I understand that the first 60 days on the job are a test
-                    run. I understand that during these 60 days, and
-                    after, myself and UNFinished Business can end my employment at any time. </p>
-            </div>
-            <div class="form-group col-md-6 mt-4">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                    <label class="form-check-label" for="gridCheck">By checking this box, I agree to be
-                        tested for illegal drugs. *</label>
-                </div>
-            </div>
             </div>
 
             <div class="text-center mb-3">
