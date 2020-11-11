@@ -597,33 +597,34 @@
                 </div>
 
 
+               
                 <br />
                 <!-- Camille's Education Section -->
                 <h4 class="font-weight-bold text-info mb-4 mt-4">Education</h4>
-                <p>Please provide your highest level of education.</p>
                 <div class="container">
                     <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-6" style = "padding: 1.2%;">
+                           <p> Please provide your highest level of education.</p>
                             <label for="eduLevel">Education Level</label>
-                            <select id="inputEdu" class="form-control">
+                            <select id="inputEdu" class="form-control" required>
                                 <option selected>Select Highest Level of Education</option>
-                                <option value="HS">High School Diploma</option>
+                                <option value="HS">High School</option>
                                 <option value="AS">Associate's</option>
                                 <option value="BS">Bachelor's</option>
                                 <option value="MS">Master's</option>
                                 <option value="PHD">Doctorate</option>
                             </select>
                             <label for="major">Major</label>
-                            <input type="text" class="form-control" maxlength="100" id="major">
+                            <input type="text" class="form-control" maxlength="35" id="major" required>
                             <label for="schoolName">School Name</label>
-                            <input type="text" maxlength="50" class="form-control" id="schoolName" pattern="[A-Za-z]*"
-                                placeholder="">
+                            <input type="text" maxlength="50" class="form-control" id="schoolName"
+                                placeholder="" required>
                             <label for="schoolCity">City</label>
-                            <input type="text" maxlength="60" class="form-control" id="schoolCity" placeholder="">
+                            <input type="text" maxlength="60" class="form-control" id="schoolCity" placeholder="" required>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="schoolState">State</label>
-                                    <select id="inputState" class="form-control">
+                                    <select id="inputState" class="form-control" required>
                                         <option selected>Select a State</option>
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
@@ -679,19 +680,16 @@
                                 </div>
                             </div>
                             <label for="gradDate">Graduation Date</label>
-                            <input type="date" class="form-control" id="gradDate" placeholder="">
+                            <input type="date" class="form-control" id="gradDate" placeholder="" required>
                         </div>
-                        <div class="form-group col-md-4 offset-md-4">
-                            <p>
-                                <h5><u>Additional Skills (Optional)</u></h5>
-                            </p>
-                            <p>Please List Additional Skills </p>
+                        <div class="form-group col-md-6" style= "padding: 2%;">
+                             <h5><u>Additional Skills (Optional)</u></h5>
                             <label for="skill1">Skill #1</label>
-                            <input type="text" maxlength="100" class="form-control" id="skill1" placeholder="">
+                            <input type="text" maxlength="35" class="form-control" id="skill1" placeholder="">
                             <label for="skill2">Skill #2</label>
-                            <input type="text" maxlength="100" class="form-control" id="skill2" placeholder="">
+                            <input type="text" maxlength="35" class="form-control" id="skill2" placeholder="">
                             <label for="skill3">Skill #3</label>
-                            <input type="text" maxlength="100" class="form-control" id="skill3" placeholder="">
+                            <input type="text" maxlength="35" class="form-control" id="skill3" placeholder="">
                         </div>
                     </div>
                 </div>
