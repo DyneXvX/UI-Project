@@ -128,7 +128,7 @@
                             </div>
                             <div class="form-group col-md-2">
                                 <label for="inputZip">Zip *</label>
-                                <input type="text" class="form-control" id="inputZip" maxlength="9" required>
+                                <input type="text" class="form-control" id="inputZip" name="zip" pattern="[0-9]*" maxlength="9" required>
                             </div>
                         </div>
                         <div class="form-row">
@@ -403,7 +403,7 @@
                                 </div>
                                 <div class="col-md-3 form-group">
                                     <label for="workExp1Zip">Zip</label>
-                                    <input type="text" id="workExp1Zip" class="form-control" maxlength="9">
+                                    <input type="text" id="workExp1Zip" name="zip" class="form-control" pattern="[0-9]*" maxlength="9">
                                 </div>
                             </div>
                             <div class="row">
@@ -524,7 +524,7 @@
                                 </div>
                                 <div class="col-md-3 form-group">
                                     <label for="workExp2Zip">Zip</label>
-                                    <input type="number" id="workExp1Zip" class="form-control" maxlength="9">
+                                    <input type="number" id="workExp1Zip" name="zip" class="form-control" pattern="[0-9]*" maxlength="9">
                                 </div>
                             </div>
                             <div class="row">
@@ -554,13 +554,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Camille's Education Section -->
+                        
                         <h4 class="font-weight-bold text-info mb-4 mt-4">Education</h4>
                         <p> Please provide your highest level of education.</p>
                         <div class="container">
                             <div class="form-row">
                                 <div class="form-group col-md-6" style="padding: 1%">
-                                            <label for="eduLevel">Education Level </label>
+                                            <label for="eduLevel">Education Level *</label>
                                             <select id="inputEdu" class="form-control" required>
                                                 <option selected>Select Highest Level of Education</option>
                                                 <option value="HS">High School</option>
@@ -576,10 +576,10 @@
                                              placeholder="" required>
                                 </div>
                                 <div class="form-group col-md-6" style="padding: 1%">
-                                    <label for="schoolCity">City</label>
+                                    <label for="schoolCity">City *</label>
                                             <input type="text" maxlength="35" class="form-control" id="schoolCity"
                                                 placeholder="" required>
-                                                <label for="schoolState">State</label>
+                                                <label for="schoolState">State *</label>
                                                 <select id="inputState" class="form-control" required>
                                                     <option selected>Select a State</option>
                                                     <option value="AL">Alabama</option>
@@ -731,7 +731,7 @@
                                         <div class="from-group col-md-6">
                                             <label for="referenceZip01">Zip</label>
                                             <input type="text" maxlength="9" class="form-control" id="referenceZip01"
-                                                pattern="[0-9]*" placeholder="">
+                                                name="zip" pattern="[0-9]*" placeholder="">
                                         </div>
                                     </div>
                                     <label for="referenceTelephone01">Telephone</label>
@@ -821,7 +821,7 @@
                                         <div class="from-group col-md-6">
                                             <label for="referenceZip02">Zip</label>
                                             <input type="text" maxlength="9" class="form-control" id="referenceZip02"
-                                                pattern="[0-9]*" placeholder="">
+                                                name="zip" pattern="[0-9]*" placeholder="">
                                         </div>
                                     </div>
                                     <label for="referenceTelephone02">Telephone</label>
@@ -932,10 +932,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="form-group col-md-12">
-                    <h4 class="font-weight-bold text-info mb-4 mt-4">APPLICATION ACKNOWLEDGEMENT AND WAIVER</h4>
+                </div> 
+                
+                <div class="form-group col-md-12 mb-4 mt-5">
+                    <h4 class="font-weight-bold text-info mb-4">Application acknowledgement and waiver</h4>
                     <p class="p-2">By submitting this application, I understand and agree that:<br><br>
                         Applying for this job does not mean I will be hired. If a job is offered and accepted,
                         UNFinished
